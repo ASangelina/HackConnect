@@ -10,13 +10,16 @@ exports.AgentModule = void 0;
 const common_1 = require("@nestjs/common");
 const agent_controller_1 = require("./agent.controller");
 const agent_service_1 = require("./agent.service");
+const gemma_service_1 = require("./gemma.service");
+const events_module_1 = require("../events/events.module");
 let AgentModule = class AgentModule {
 };
 exports.AgentModule = AgentModule;
 exports.AgentModule = AgentModule = __decorate([
     (0, common_1.Module)({
+        imports: [events_module_1.EventsModule],
         controllers: [agent_controller_1.AgentController],
-        providers: [agent_service_1.AgentService]
+        providers: [agent_service_1.AgentService, gemma_service_1.GemmaService],
     })
 ], AgentModule);
 //# sourceMappingURL=agent.module.js.map
