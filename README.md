@@ -40,7 +40,7 @@ Docker	Execução dos serviços em containers
 
 O HackConnect separa a interpretação da linguagem natural das regras de negócio e do armazenamento dos dados.
 
-text
+
                     ┌─────────────────────┐
                     │      Swagger UI     │
                     │   Interface de API  │
