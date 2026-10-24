@@ -15,6 +15,7 @@ const app_service_1 = require("./app.service");
 const events_module_1 = require("./events/events.module");
 const experiences_module_1 = require("./experiences/experiences.module");
 const agent_module_1 = require("./agent/agent.module");
+const prisma_module_1 = require("./prisma/prisma.module");
 _a = (0, observe_1.createObserveModule)(), exports.ObserveModule = _a.ObserveModule, exports.ObserveInstrument = _a.ObserveInstrument;
 let AppModule = class AppModule {
 };
@@ -30,6 +31,7 @@ exports.AppModule = AppModule = __decorate([
             events_module_1.EventsModule,
             experiences_module_1.ExperiencesModule,
             agent_module_1.AgentModule,
+            prisma_module_1.PrismaModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

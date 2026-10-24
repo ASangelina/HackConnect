@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { EventsModule } from './events/events.module';
 import { ExperiencesModule } from './experiences/experiences.module';
 import { AgentModule } from './agent/agent.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -20,6 +21,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     EventsModule,
     ExperiencesModule,
     AgentModule,
+    PrismaModule,
   ],
   controllers: [AppController],
   providers: [AppService],
