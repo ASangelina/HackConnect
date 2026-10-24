@@ -79,7 +79,7 @@ A API devolve o resultado ao usuário.
 Importante: o modelo de IA interpreta as solicitações, mas as operações no banco são controladas pelo backend. O modelo não possui acesso irrestrito ao banco de dados.
 
 📂 Estrutura do projeto
-text
+```text 
 HackConnect/
 ├── backend/
 │   ├── prisma/
@@ -100,4 +100,4 @@ HackConnect/
 │   │   ├── app.module.ts
 │   │   └── main.ts
 │   ├── docker-compose.yml
-│
+``` 
